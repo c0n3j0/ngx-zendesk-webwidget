@@ -4,7 +4,7 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/AlisonVilela/ngx-zendesk-webwidget/issues)
 [![Join the chat at https://gitter.im/ngx-zendesk-webwidget/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dwyl/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# ngx-zendesk-webwidget
+# ngx-zendesk-webwidget-8
 
 Zendesk-Webwidget for Angular 2+
 
@@ -15,7 +15,7 @@ Zendesk-Webwidget for Angular 1.x see [here](https://github.com/CrossLead/angula
 Via [npm](https://www.npmjs.com/package/ngx-zendesk-webwidget):
 
 ```bash
-$ npm install ngx-zendesk-webwidget --save
+$ npm install ngx-zendesk-webwidget-8 --save
 ```
 
 ## Usage

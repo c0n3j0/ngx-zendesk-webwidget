@@ -1,6 +1,6 @@
 {
-  "name": "ngx-zendesk-webwidget",
-  "version": "0.1.4",
+  "name": "ngx-zendesk-webwidget-8",
+  "version": "0.1.5",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -15,18 +15,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlisonVilela/ngx-zendesk-webwidget.git"
+    "url": "https://github.com/c0n3j0/ngx-zendesk-webwidget.git"
   },
   "author": {
-    "name": "Alison Vilela",
-    "email": "alison.vilela@live.nl"
+    "name": "Luciano Russo",
+    "email": "lucianorusso@gmail.com"
   },
   "keywords": [
     "angular"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlisonVilela/ngx-zendesk-webwidget/issues"
+    "url": "https://github.com/c0n3j0/ngx-zendesk-webwidget/issues"
   },
   "devDependencies": {
     "@angular/common": "8.2.9",
