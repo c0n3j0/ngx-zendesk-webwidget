@@ -23,80 +23,75 @@ $ npm install ngx-zendesk-webwidget --save
 #### 1. Import the `ngxZendeskWebwidgetModule`:
 
 ```ts
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
-import { ngxZendeskWebwidgetModule } from 'ngx-zendesk-webwidget';
+import { ngxZendeskWebwidgetModule } from "ngx-zendesk-webwidget";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    ngxZendeskWebwidgetModule.forRoot()
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, ngxZendeskWebwidgetModule.forRoot()],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 ##### SharedModule
 
 ```ts
 @NgModule({
-    exports: [
-        CommonModule,
-        ngxZendeskWebwidgetModule
-    ]
+  exports: [CommonModule, ngxZendeskWebwidgetModule]
 })
-export class SharedModule { }
+export class SharedModule {}
 ```
 
 ##### Configuration
 
 ```ts
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import {ngxZendeskWebwidgetModule, ngxZendeskWebwidgetConfig} from 'ngx-zendesk-webwidget';
+import {
+  ngxZendeskWebwidgetModule,
+  ngxZendeskWebwidgetConfig
+} from "ngx-zendesk-webwidget";
 
-import {AppComponent} from './app';
+import { AppComponent } from "./app";
 
 export class ZendeskConfig extends ngxZendeskWebwidgetConfig {
-  accountUrl = 'yourdomain.zendesk.com';
+  accountUrl = "yourdomain.zendesk.com";
   beforePageLoad(zE) {
-    zE.setLocale('en');
+    zE.setLocale("en");
     zE.hide();
   }
 }
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        ngxZendeskWebwidgetModule.forRoot(ZendeskConfig)
-    ],
-    bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    ngxZendeskWebwidgetModule.forRoot(ZendeskConfig)
+  ],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 #### 2. Init the `ngxZendeskWebwidgetService` for your application:
 
 ```ts
-import { ngxZendeskWebwidgetService } from 'ngx-zendesk-webwidget';
+import { ngxZendeskWebwidgetService } from "ngx-zendesk-webwidget";
 
 @Component({
-  selector: 'app',
-  templateUrl: './app.html'
+  selector: "app",
+  templateUrl: "./app.html"
 })
 export class app {
-
-  constructor(private _ngxZendeskWebwidgetService: ngxZendeskWebwidgetService) {
-  }
+  constructor(
+    private _ngxZendeskWebwidgetService: ngxZendeskWebwidgetService
+  ) {}
 }
 ```
 
@@ -116,6 +111,7 @@ export class app {
   }
 }
 ```
+
 ## API
 
 ### ngxZendeskWebwidgetService
@@ -146,6 +142,10 @@ Please report bugs and issues [here](https://github.com/AlisonVilela/ngx-zendesk
 MIT © [Alison Vilela](https://github.com/AlisonVilela)
 
 ## Change log
+
+### v0.1.5
+
+- Support Angular 8
 
 ### v0.1.4
 
